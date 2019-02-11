@@ -8,6 +8,7 @@ Website has:
 
 To dos:
 * Make website multilingual
+* Make a chatbot that keeps people informed of my schedule.  It is possible using Jekyll.
 * Google Chrome version lacks buttons and ability to view looping video.
 * Put my face on website.
 * Add information about projects, internships, volunteering, blogs, and research.
