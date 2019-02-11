@@ -1,4 +1,5 @@
 Current website specifications:
+Please view website on Safari.
 Website has:
 * Video looping of lotus.
 * Partial resume.
@@ -6,8 +7,7 @@ Website has:
 * Music.
 
 To dos:
-* Understand why fa elements are not displaying on the website.  Links are still there, but the icons for the different accounts are not showing.
-* Make video loop in Google Chrome.
+* Google Chrome version lacks buttons and ability to view looping video.
 * Put my face on website.
 * Add information about projects, internships, volunteering, blogs, and research.
 * Add hobbies. (?)
