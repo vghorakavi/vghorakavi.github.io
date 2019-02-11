@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <audio controls autoplay>
-  <!--Music is royalty free.  Air by Bach.-->
-  <source src="air-bach.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-  </audio>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -157,7 +152,12 @@
       width: 970px;
     }
   }
-
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  }
   .blog-nav-item:hover,
   .blog-nav-item:focus {
     color: #fff;
@@ -237,7 +237,12 @@
     <!--Video from video.pexels.com-->
     <source src="lotus.mp4" type="video/mp4">
   </video>
-
+  <img src="myface.png" display = "block" width="200" alt="Photo of me from February 6, 2019." class="center" img style="border:5px solid pink">
+  <audio controls autoplay class = "center">
+  <!--Music is royalty free.  Air by Bach.-->
+  <source src="air-bach.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
     <section class="blog-post">
               <h1 class="blog-title" class align = "center">Veena Venkata Ghorakavi (Emma)</h1>
               <p class="lead blog-description" class align = "center">Software Engineer | Bioinformatician</p>
@@ -273,7 +278,7 @@
               </tbody>
             </table>
           </div>
-          
+
           <div class="blog-post" class align = "center">
             <h2 class="blog-post-title" class align = "center">Selected Vocational Experience</h2>
             <blockquote>
@@ -289,6 +294,7 @@
               <p>Developed in Javascript.</p>
             </blockquote>
           </div>
+
           <div class="blog-post" class align = "center">
             <h2 class="blog-post-title">Education</h2>
             <h3>Texas A&M University-College Station</h3>
