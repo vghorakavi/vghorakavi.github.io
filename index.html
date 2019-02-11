@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <audio controls autoplay>
+  <!--Music is royalty free.  Air by Bach.-->
+  <source src="air-bach.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Veena Ghorakavi | Software Engineer | Bioinformatician | Undergraduate | vghorakavi@gmail.com </title>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/scrolling-nav.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script>
+    $(window).load(function() {
+      $(".bg_load").fadeOut(10000);
+    })
+  </script>
+
+  <script>
+  /*
+  *http://thenewcode.com/samples/polina.html
+  *No lie, the idea behind Polina is really cute.  Attribution done.
+  */
+    var vid = document.getElementById("bgvid");
+    var pauseButton = document.querySelector("#polina button");
+    function vidFade() {
+      vid.classList.add("stopfade");
+    }
+    vid.addEventListener('ended', function() {
+      vid.pause();
+      vidFade();
+    });
+    pauseButton.addEventListener("click", function() {
+      vid.classList.toggle("stopfade");
+      if (vid.paused) {
+        vid.play();
+        pauseButton.innerHTML = "Pause";
+      } else {
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+      }
+    })
+  </script>
+
+</head>
+<style>
+  body {
+    margin: 0;
+    background: #000;
+  }
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+  }
+  .stopfade {
+    opacity: .5;
+  }
+  #polina {
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight: 100;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 2rem;
+    width: 33%;
+    margin: 2rem;
+    float: right;
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: .3rem;
+  }
+  #polina button {
+    display: block;
+    width: 80%;
+    padding: .4rem;
+    border: none;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    background: rgba(255, 255, 255, 0.23);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s background;
+  }
+  #polina button:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem;
+    transition: .6s background;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  @media screen and (max-device-width: 800px) {
+    html {
+      background: url(lotus.png) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+      display: none;
+    }
+  }
+  @import url(https://fonts.googleapis.com/css?family=Tangerine);
+  body {
+    background: #EEE;
+  }
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6,
+  a {
+    margin-top: 0;
+    font-family: "Arial", Arial, Arial, sans-serif;
+    font-weight: normal;
+    color: #333;
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 970px;
+    }
+  }
+
+  .blog-nav-item:hover,
+  .blog-nav-item:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .blog-nav .active {
+    color: #fff;
+  }
+
+  .blog-nav .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid;
+    border-left: 5px solid transparent;
+  }
+
+  .blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 45px;
+    font-weight: normal;
+  }
+
+  .blog-description {
+    font-size: 20px;
+    color: #333;
+  }
+
+  .sidebar-module {
+    padding: 15px;
+    margin: 0 -15px 15px;
+  }
+
+  .sidebar-module-inset {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+
+  .sidebar-module-inset p:last-child,
+  .sidebar-module-inset ul:last-child,
+  .sidebar-module-inset ol:last-child {
+    margin-bottom: 0;
+  }
+
+  .blog-post {
+    margin-bottom: 60px;
+  }
+  .blog-post-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+  }
+
+  .blog-footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+  }
+  .blog-footer p:last-child {
+    margin-bottom: 0;
+  }
+
+</style>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <video autoplay poster="lotus.png" id="bgvid" loop>
+    <!--Video from video.pexels.com-->
+    <source src="lotus.mp4" type="video/mp4">
+  </video>
+
+    <section class="blog-post">
+              <h1 class="blog-title" class align = "center">Veena Venkata Ghorakavi (Emma)</h1>
+              <p class="lead blog-description" class align = "center">Software Engineer | Bioinformatician</p>
+            </section>
+
+
+          <div class="blog-post">
+              <h2 class="blog-post-title" class align = "center">Profile</h2>
+              <blockquote>
+                <p>Logical thinker with strong sense of empathy and compassion.  Motivated to utilize knowledge to improve the welfare of others.  Intimately and precisely understands the purpose and internal logic of each portion of complex systems regardless of application of logic to other situations.</p>
+              </blockquote>
+            </div>
+
+          <div class="blog-post">
+            <h2 class="blog-post-title" class align = "center">Selected Programming Languages and Software Packages</h2>
+            <table class="table" style="max-width:50%" table align="center">
+              <tbody>
+                <tr>
+                  <td>Python</td>
+                  <td>C++</td>
+                  <td>Corda</td>
+                </tr>
+                <tr>
+                  <td>R</td>
+                  <td>Java</td>
+                  <td>Circos</td>
+                </tr>
+                <tr>
+                  <td>Javascript</td>
+                  <td>Assembly</td>
+                  <td>Galaxy</td>
+                </tr>
+              </tbody>
+            </table>
+          <div class="blog-post" class align = "center">
+            <h2 class="blog-post-title" class align = "center">Selected Vocational Experience</h2>
+            <blockquote>
+              <big class="pull-center">February 2019-present</big>
+              <h2>Hewlett Packard Enterprise</h2>
+              <h3>Software Engineer</h3>
+              <p>Software-Defined Networking.</p>
+            </blockquote>
+            <blockquote>
+              <big class="pull-center">May 2018-February 2019</big>
+              <h2>Hewlett Packard Enterprise</h2>
+              <h3>Software Engineer Intern</h3>
+              <p>Developed in Javascript.</p>
+            </blockquote>
+          </div>
+          <div class="blog-post" class align = "center">
+            <h2 class="blog-post-title">Education</h2>
+            <h3>Texas A&M University-College Station</h3>
+            <p>Computer Science (Bachelors of Science)</br>
+            </p>
+            <p>Biochemistry (Bachelors of Science)</br>
+              Minors in Mathematics
+            </p>
+
+          </div>
+
+
+        </div>
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset" style="background-color: gray;
+                                                                  color: white;
+                                                                  position: relative;>
+            <h4 style="color: white;">Contact Information</h4>
+            <p><a href="vghorakavi@gmail.com"><span style="color: white; font-style: italic;">vghorakavi@gmail.com</span></a>
+            </br>7132134331</p>
+          </div>
+          <div class="sidebar-module">
+          </div>
+          <div class="sidebar-module">
+            <h4>Online Accounts</h4>
+            <ol class="list-unstyled">
+              <a href="https://github.com/vghorakavi" target="_blank"><i class="fa fa-github-square" style="font-size:36px; color:black;"></a></i>
+              <a href="https://linkedin.com/in/veena-emma-g-309993129" target="_blank"><i class="fa fa-linkedin-square" style="font-size:36px; color:blue"></a></i>
+              <a href="https://stackexchange.com/users/7699122/veena-ghorakavi" target="_blank"><i class ="fa fa-stack-exchange" style="font-size:36px; color:black"></a></i>
+              <a href="https://instagram.com/maxwelliandaemon" target="_blank"><i class="fa fa-instagram" style="font-size:36px;"></a></i>
+              <a href="https://twitter.com/maxwells_daemon" target="_blank"><i class="fa fa-twitter-square" style="font-size:36px; color:blue;" ></a></i>
+              <a href="https://pinterest.com/veenaghorakavi" target="_blank"><i class="fa fa-pinterest-square" style="font-size:36px; color:red"></a></i>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer class="blog-footer">
+      <p>Veena Ghorakavi &mdash;<a href="mailto:vghorakavi@gmail.com"><span style="font-style: italic;">vghorakavi@gmail.com</span></a>&mdash; 7132134331</p>
+      <p>
+        <a href="#page-top">Back to top</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://blackrockdigital.github.io/startbootstrap-scrolling-nav/js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="http://blackrockdigital.github.io/startbootstrap-scrolling-nav/js/jquery.easing.min.js"></script>
+    <script src="http://blackrockdigital.github.io/startbootstrap-scrolling-nav/js/scrolling-nav.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+</body>
+
+</html>
