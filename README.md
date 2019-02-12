@@ -1,6 +1,6 @@
+##Single page HTML website
+
 Current website specifications:
-Please view website on Safari.
-Website has:
 * Video looping of lotus.
 * Partial resume.
 * Links to my online accounts.
